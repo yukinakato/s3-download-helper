@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "S3 Download Helper",
+  "description": "Download an object on S3 console",
+  "version": "1.0",
+  "action": {
+    "default_icon": "icon_32.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://s3.console.aws.amazon.com/*"
+      ],
+      "js": [
+        "front.js"
+      ]
+    }
+  ],
+  "commands": {
+    "downloadObject": {
+      "suggested_key": {
+        "default": "Alt+D"
+      },
+      "description": "Download an object",
+      "global": false
+    }
+  },
+  "icons": {
+    "32": "icon_32.png",
+    "128": "icon_128.png"
+  }
+}
