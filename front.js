@@ -1,5 +1,5 @@
 async function sleep() {
-  return new Promise((resolve) => setTimeout(resolve, 50))
+  return new Promise((resolve) => setTimeout(resolve, 100))
 }
 
 chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
