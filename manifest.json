@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "S3 Download Helper",
-  "description": "Download an object on S3 console",
+  "description": "Download objects on S3 console",
   "version": "1.0",
   "action": {
     "default_icon": "icon_32.png"
@@ -24,7 +24,7 @@
       "suggested_key": {
         "default": "Alt+D"
       },
-      "description": "Download an object",
+      "description": "Download objects",
       "global": false
     }
   },
